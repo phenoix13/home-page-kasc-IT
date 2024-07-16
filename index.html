@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS SYLLABUS</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        /* for desktop*/
+        body{
+            background-color: black;
+            font-family: "Roboto Condensed", sans-serif;
+            width: 100vw;
+            height: 100vh;
+        }
+        header{
+            width: 99vw;
+            min-height: 10%;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            overflow: hidden; 
+        }
+        /* logo and name*/
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+        img{
+            width: 7rem;
+            height: 7rem;
+            margin: 8px 0 8px 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        /* nav & hover*/
+        nav{
+            display: flex;
+            flex-direction: row;
+            margin-left: 20rem;
+        }
+        li{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto 40px;
+            font-size: 1.8rem;
+        }
+        li a{
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+            transition: all 0.4s linear;
+        }
+        li a:hover{
+            color: black;
+            padding: 10px;
+            background-color: white;
+        }       
+        /* button & hover*/
+        button{
+            font-weight: 700;
+            text-align: center;
+            font-size: 1rem;
+            margin-right: 20px;
+            transition: all 0.4s linear 0s;
+        }
+        button a{
+            color: black;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+        button:hover{
+            border: 2px solid;
+            border-radius: 10px;
+            border-color: aqua;
+            background-color: blue;
+            color: white;
+        }
+        hr{
+            border: 2.5px solid brown;
+        }   
+        /* section content*/
+        section{
+            color: white;
+            margin: 15px;
+        }
+        section .a{
+            margin-top: 40px;
+            text-indent: 70px;
+            font-size: 1.7rem;
+        }
+        section .b h2{
+            margin: 15px;
+            color: gold;
+            font-size: 2.3rem;
+        }
+        .b1 h4{
+            margin: 25px;
+            font-size: 2rem;
+        }
+        .b1 a{
+            text-decoration: none;
+            color: white;
+        }
+        .b1 .c1 a:hover{
+            color: rgb(221, 221, 22);
+        }
+        .b1 .c2 a:hover{
+            color: rgb(30, 30, 212);
+        }
+        .b1 .c3 a:hover{
+            color: rgb(207, 30, 30);
+        }
+    /* for phone desktop*/
+    @media(max-width:900px){
+        img{
+            width: 6.5rem;
+            height: 6.5rem;
+            margin-left: 7px;
+        }
+        /* nav & hover*/
+        nav{
+            display: flex;
+            flex-direction: row;
+            margin-left: -20PX;
+        }
+        li{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto 9px;
+            font-size: 1.5rem;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+            transition: all 0.4s linear;
+        }
+        li a:hover{
+            color: black;
+            padding: 10px;
+            background-color: white;
+        }
+        /* nav list*/
+        .list{
+            display: inline-block;
+        }
+        .child{
+            position: absolute;
+            display: none;
+            background-color: white;
+            z-index: 1;
+        }
+        .child a{
+            color: black;
+            display: block;
+            padding: 10px;
+            transition: all 0.4s linear;
+        }
+        .child a:hover{
+            color: white;
+            background-color: black;
+        }
+        .list:hover .child {
+            display: block;
+        }
+        /* button & hover*/
+        button{
+            text-align: center;
+            transition: all 0.4s linear 0s;
+        }
+        button a{
+            color: black;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        button:hover{
+            border: 2px solid;
+            border-radius: 10px;
+            border-color: aqua;
+            background-color: rgb(255, 0, 0);
+            color: white;
+        }
+        }
+        /* for phone normal view*/
+        @media(max-width:600px){
+                    /* logo and name*/
+        img{
+            width: 65px;
+            height: 65px;
+        }
+        /* nav & hover*/
+        nav{
+            display: flex;
+            flex-direction: row;
+            margin-left: -5px;
+        }
+        li{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto 5px;
+            font-size: 1rem;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+            transition: all 0.4s linear;
+        }
+        li a:hover{
+            color: black;
+            padding: 10px;
+            background-color: white;
+        }
+        /* nav list*/
+        .list{
+            display: inline-block;
+        }
+        .child{
+            position: absolute;
+            display: none;
+            background-color: white;
+            z-index: 1;
+        }
+        .child a{
+            color: black;
+            display: block;
+            padding: 10px;
+            transition: all 0.4s linear;
+        }
+        .child a:hover{
+            color: white;
+            background-color: black;
+        }
+        .list:hover .child {
+            display: block;
+        }
+        /* button & hover*/
+        button{
+            background-color: none;
+            text-align: center;
+            transition: all 0.4s linear 0s;
+        }
+        button a{
+            color: black;
+            text-decoration: none;
+            font-size: 0.5rem;
+        }
+        button:hover{
+            border: 2px solid;
+            border-radius: 10px;
+            border-color: aqua;
+            background-color: blue;
+            color: white;
+        }
+     /* section content*/
+        section{
+            color: white;
+            margin: 10px;
+        }
+        section .a{
+            margin-top: 40px;
+            text-indent: 90px;
+            font-size: 1rem;
+        }
+        section .b h2{
+            margin: 15px;
+            color: gold;
+            font-size: 1.5rem;
+        }
+        .b1 h4{
+            margin: 25px;
+            font-size: 1.2rem;
+        }
+        }    
+        </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <img src="https://i.ibb.co/pJVLMbc/stydy-logo.jpg">
+        </div>
+        <nav>
+            <li><a href="https://phenoix13.github.io/home-page-kasc/">
+                HOME
+            </a></li>
+            <li class="list"><a>
+                B.SC.IT
+            </a>
+            </li>
+            <li class="new"><a href="https://phenoix13.github.io/kasc-news/">
+                NEWS
+            </a></li>
+        </nav>
+            <button> 
+                <a href="mailto:teamphenoix13@gamil.com">CONTACT US
+                </a>
+            </button>
+    </header>
+    <hr>
+    <section>
+        <div class="a">
+            <p>
+                The project is desined by TEAM PHOENIX from CS department.It is to help all IT department student in our college,students want subject material for their studies.So we plan to do this project to support.
+            </p>
+        </div> 
+        <div class="b">
+            <h2>
+                Department of Computer science :
+            </h2>
+            <div class="b1">
+                <h4 class="c1">
+                    <a href="" title="click me">
+                        1 YEAR SYLLABUS
+                    </a>
+                </h4>
+                <h4 class="c2">
+                    <a href="" title="click me">
+                        2 YEAR SYLLABUS
+                    </a>
+                </h4>
+                <h4 class="c3">
+                    <a href="" title="click me ">
+                        3 YEAR SYLLABUS
+                    </a>
+                </h4>
+            </div>
+        </div>      
+    </section>  
+    <script>
+        alert("While using material please check the material topic is same in your current material topic");
+    </script>  
+</body>
+</html>
